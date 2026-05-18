@@ -1,0 +1,11 @@
+{
+  "id": "twitterx",
+  "displayName": "Twitter / X",
+  "enabled": true,
+  "apiVersion": "v2",
+  "features": {
+    "publishPosts": true,
+    "readComments": true,
+    "readAnalytics": false
+  }
+}
