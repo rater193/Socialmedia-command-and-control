@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SocialMedia C3 Control Panel</title>
+  <link id="theme-stylesheet" rel="stylesheet" href="/css/themes/default/style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside id="sidebar" class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">⌘</div>
+        <div>
+          <div class="brand-title">SocialMedia C3</div>
+          <div class="brand-subtitle">Campaign Command Center</div>
+        </div>
+      </div>
+
+      <div class="nav-label">Main</div>
+      <button class="nav-button active" data-view="dashboard"><span class="nav-icon">🏠</span> Dashboard</button>
+      <button class="nav-button" data-view="platforms"><span class="nav-icon">🌐</span> Platforms</button>
+      <button class="nav-button" data-view="videos"><span class="nav-icon">🎬</span> Videos</button>
+      <button class="nav-button" data-view="comments"><span class="nav-icon">💬</span> Comments</button>
+
+      <div class="nav-label">Platforms</div>
+      <div id="platformQuickLinks" class="platform-quick-links"></div>
+
+      <div class="sidebar-note">
+        <strong>Toggle sidebar</strong><br />
+        Open this menu with the hamburger button. It scrolls independently and closes after navigation.
+      </div>
+    </aside>
+
+    <div id="sidebarScrim" class="sidebar-scrim"></div>
+
+    <section class="main-shell">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button id="sidebarToggle" class="menu-button" aria-label="Toggle sidebar">☰</button>
+          <div class="page-title">
+            <h1 id="pageTitle">Dashboard</h1>
+            <p id="pageSubtitle">At-a-glance campaign operations.</p>
+          </div>
+        </div>
+
+        <div class="global-search">
+          <span>🔎</span>
+          <input id="globalSearch" type="search" placeholder="Search videos, comments, platforms, campaigns..." />
+        </div>
+
+        <div class="top-actions">
+          <button class="ghost-button" data-view-shortcut="comments">Review Comments</button>
+          <button id="uploadVideoButton" class="primary-button">Upload Video</button>
+          <select id="themeSelector" class="theme-select" aria-label="Theme selector">
+            <option value="default">Default</option>
+          </select>
+        </div>
+      </header>
+
+      <main class="content">
+        <section id="dashboardView" class="view active"></section>
+        <section id="platformsView" class="view"></section>
+        <section id="videosView" class="view"></section>
+        <section id="commentsView" class="view"></section>
+      </main>
+    </section>
+  </div>
+
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal-window">
+      <div class="modal-bar">
+        <div class="modal-title-area">
+          <div class="traffic-lights"><span class="red"></span><span class="yellow"></span><span class="green"></span></div>
+          <span id="modalTitle">Window</span>
+        </div>
+        <button id="modalClose" class="close-button">✕</button>
+      </div>
+      <div id="modalBody" class="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="/js/themeManager.js"></script>
+  <script src="/js/source.js"></script>
+</body>
+</html>
