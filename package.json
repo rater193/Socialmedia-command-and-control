@@ -1,0 +1,23 @@
+{
+  "name": "socialmedia-command-and-control",
+  "version": "0.1.0",
+  "description": "Node.js web server for the SocialMedia C3 Control Panel.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "social-media",
+    "control-panel",
+    "campaigns",
+    "nodejs",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
