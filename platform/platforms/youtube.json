@@ -1,0 +1,11 @@
+{
+  "id": "youtube",
+  "displayName": "YouTube",
+  "enabled": true,
+  "apiVersion": "v3",
+  "features": {
+    "uploadVideos": true,
+    "readComments": true,
+    "readAnalytics": true
+  }
+}
